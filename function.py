@@ -62,7 +62,17 @@ print("입력한 문자열의 길이=",len(a))
 x=['a','b','c','d','e','f']
 print(len(x))
 
+''' 사용자 정의함수 '''
+# 사용자정의함수와 메인부분 매개변수 이름은 달라도 되지만 형식은 같아야함
+# 직육면체 부피 계산
+def mVolume(a, b, c) :
+    return a*b*c
 
+w = int(input('가로값을 입력하세요 : '))
+h = int(input('세로값을 입력하세요 : '))
+h2 = int(input('높이값을 입력하세요 : '))
+V = mVolume(w,h,h2)
+print('직육면체 부피는 %d 세제곱센티미터' %(V))
 
 
 
